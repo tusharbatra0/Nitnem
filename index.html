@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NITNEM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          
+  'sm': '640px',
+  // => @media (min-width: 640px) { ... }
+
+  'md': '768px',
+  // => @media (min-width: 768px) { ... }
+
+  'lg': '1024px',
+  // => @media (min-width: 1024px) { ... }
+
+  'xl': '1280px',
+  // => @media (min-width: 1280px) { ... }
+
+  '2xl': '1536px',
+  // => @media (min-width: 1536px) { ... }
+},
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body>
+    <!-- header -->
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <img width="90px" src="https://ih1.redbubble.net/image.1952244111.4866/st,small,845x845-pad,1000x1000,f8f8f8.jpg" alt="" srcset="">
+            <span class="ml-3 text-2xl">NITNEM</span>
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <a id="japjisahib" class="mr-5 cursor-pointer text-xl text-black hover:text-gray-900">Japji Sahib</a>
+            <a id="rehrassahib" class="mr-5 cursor-pointer text-xl text-black hover:text-gray-900">Rehras Sahib</a>
+            <a id="anandsahib" class="mr-5 cursor-pointer text-xl text-black hover:text-gray-900">Anand Sahib</a>
+            <a id="chopaisahib" class="mr-5 cursor-pointer  text-xl text-black hover:text-gray-900">Chaupai Sahib</a>
+          </nav>
+          
+        </div>
+      </header>
+       <section class="flex justify-center flex-wrap  text-center align-center ">
+      <div class="text-center flex justify-center w-[320px] " >
+         <p id="path" class="text-center place-content-center text-xl" ></p>
+      </div>
+    </section>
+
+      <script src="script.js"></script>
+</body>
+</html>
